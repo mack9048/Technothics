@@ -1,0 +1,1119 @@
+{
+  "models": [
+    {
+      "code": "08",
+      "name": "850VA Home",
+      "dealer_price": 5700,
+      "labour": 300,
+      "overhead": 160,
+      "units_month": 46
+    },
+    {
+      "code": "1K",
+      "name": "1100VA Home",
+      "dealer_price": 7400,
+      "labour": 350,
+      "overhead": 180,
+      "units_month": 58
+    },
+    {
+      "code": "2K",
+      "name": "2kVA Heavy",
+      "dealer_price": 13000,
+      "labour": 520,
+      "overhead": 260,
+      "units_month": 26
+    },
+    {
+      "code": "5K",
+      "name": "5kVA Heavy",
+      "dealer_price": 27000,
+      "labour": 900,
+      "overhead": 420,
+      "units_month": 12
+    }
+  ],
+  "bom": {
+    "1100VA Home": [
+      {
+        "component": "Transformer",
+        "spec": "1100VA copper",
+        "qty": "1",
+        "unit_price": 1650,
+        "item": "1100VA Transformer",
+        "per_unit": 1
+      },
+      {
+        "component": "Control PCB",
+        "spec": "Sine wave v3",
+        "qty": "1",
+        "unit_price": 820,
+        "item": "Sine wave PCB v3",
+        "per_unit": 1
+      },
+      {
+        "component": "MOSFET",
+        "spec": "IRFZ44N",
+        "qty": "8",
+        "unit_price": 28,
+        "item": "IRFZ44N MOSFET",
+        "per_unit": 8
+      },
+      {
+        "component": "Capacitor",
+        "spec": "4700µF 63V",
+        "qty": "2",
+        "unit_price": 95,
+        "item": "4700µF 63V Capacitor",
+        "per_unit": 2
+      },
+      {
+        "component": "Heat sink",
+        "spec": "Al 150 mm",
+        "qty": "1",
+        "unit_price": 210,
+        "item": null,
+        "per_unit": 1,
+        "cover": 40
+      },
+      {
+        "component": "Cooling fan",
+        "spec": "12V DC",
+        "qty": "1",
+        "unit_price": 140,
+        "item": "12V DC fan",
+        "per_unit": 1
+      },
+      {
+        "component": "Outer cabinet",
+        "spec": "CRCA powder coat",
+        "qty": "1",
+        "unit_price": 960,
+        "item": "CRCA cabinet 1100VA",
+        "per_unit": 1
+      },
+      {
+        "component": "LCD display",
+        "spec": "16×2",
+        "qty": "1",
+        "unit_price": 216,
+        "item": null,
+        "per_unit": 1,
+        "cover": 52
+      },
+      {
+        "component": "Wiring set",
+        "spec": "Cables, lugs, fuse",
+        "qty": "1",
+        "unit_price": 310,
+        "item": null,
+        "per_unit": 1,
+        "cover": 48
+      },
+      {
+        "component": "Small parts",
+        "spec": "Resistors, diodes, ICs",
+        "qty": "1 kit",
+        "unit_price": 100,
+        "item": null,
+        "per_unit": 1,
+        "cover": 120
+      }
+    ]
+  },
+  "items": [
+    {
+      "name": "IRFZ44N MOSFET",
+      "category": "Power parts",
+      "bin": "A-03",
+      "on_hand": 38,
+      "reserved": 96,
+      "in_vans": 24,
+      "reorder_level": 100,
+      "supplier": "Supplier A",
+      "last_price": 28,
+      "reorder_qty": 300,
+      "watch": false,
+      "sale_price": 90,
+      "hsn": "8541"
+    },
+    {
+      "name": "4700µF 63V Capacitor",
+      "category": "Resistors & caps",
+      "bin": "B-11",
+      "on_hand": 22,
+      "reserved": 24,
+      "in_vans": 8,
+      "reorder_level": 60,
+      "supplier": "Supplier B",
+      "last_price": 95,
+      "reorder_qty": 120,
+      "watch": false,
+      "sale_price": 150,
+      "hsn": "8532"
+    },
+    {
+      "name": "1100VA Transformer",
+      "category": "Transformers",
+      "bin": "T-01",
+      "on_hand": 9,
+      "reserved": 12,
+      "in_vans": 0,
+      "reorder_level": 15,
+      "supplier": "Supplier C",
+      "last_price": 1650,
+      "reorder_qty": 30,
+      "watch": false,
+      "sale_price": 2400,
+      "hsn": "8504"
+    },
+    {
+      "name": "Sine wave PCB v3",
+      "category": "Power parts",
+      "bin": "A-07",
+      "on_hand": 64,
+      "reserved": 12,
+      "in_vans": 0,
+      "reorder_level": 20,
+      "supplier": "Supplier A",
+      "last_price": 820,
+      "reorder_qty": 40,
+      "watch": false,
+      "sale_price": 1400,
+      "hsn": "8534"
+    },
+    {
+      "name": "10kΩ resistor (reel)",
+      "category": "Resistors & caps",
+      "bin": "B-02",
+      "on_hand": 4800,
+      "reserved": 600,
+      "in_vans": 200,
+      "reorder_level": 1000,
+      "supplier": "Supplier B",
+      "last_price": 1,
+      "reorder_qty": 5000,
+      "watch": false,
+      "sale_price": 1,
+      "hsn": "8533"
+    },
+    {
+      "name": "12V DC fan",
+      "category": "Consumables",
+      "bin": "C-05",
+      "on_hand": 85,
+      "reserved": 12,
+      "in_vans": 6,
+      "reorder_level": 30,
+      "supplier": "Supplier A",
+      "last_price": 140,
+      "reorder_qty": 60,
+      "watch": false,
+      "sale_price": 140,
+      "hsn": "8414"
+    },
+    {
+      "name": "CRCA cabinet 1100VA",
+      "category": "Cabinets",
+      "bin": "D-01",
+      "on_hand": 30,
+      "reserved": 12,
+      "in_vans": 0,
+      "reorder_level": 20,
+      "supplier": "Supplier D",
+      "last_price": 960,
+      "reorder_qty": 40,
+      "watch": true,
+      "sale_price": 1300,
+      "hsn": "7326"
+    },
+    {
+      "name": "Charging relay 30A",
+      "category": "Power parts",
+      "bin": "A-09",
+      "on_hand": 41,
+      "reserved": 0,
+      "in_vans": 9,
+      "reorder_level": 25,
+      "supplier": "Supplier A",
+      "last_price": 220,
+      "reorder_qty": 50,
+      "watch": false,
+      "sale_price": 220,
+      "hsn": "8536"
+    }
+  ],
+  "batches": [
+    {
+      "code": "B-2611-07",
+      "model": "1100VA Home",
+      "qty": 12,
+      "stage": "Assembly",
+      "serial_from": "INV-1K-2611-00489",
+      "serial_to": "00500",
+      "progress": 40
+    },
+    {
+      "code": "B-2611-06",
+      "model": "2kVA Heavy",
+      "qty": 6,
+      "stage": "Testing",
+      "serial_from": "INV-2K-2611-00121",
+      "serial_to": "00126",
+      "progress": 70
+    },
+    {
+      "code": "B-2611-05",
+      "model": "850VA Home",
+      "qty": 10,
+      "stage": "QC passed",
+      "serial_from": "INV-08-2611-00311",
+      "serial_to": "00320",
+      "progress": 90
+    },
+    {
+      "code": "B-2611-04",
+      "model": "5kVA Heavy",
+      "qty": 3,
+      "stage": "Ready",
+      "serial_from": "INV-5K-2611-00034",
+      "serial_to": "00036",
+      "progress": 100
+    }
+  ],
+  "serials": [
+    {
+      "serial": "INV-1K-2611-00482",
+      "model": "1100VA Home",
+      "batch": "B-2603-02",
+      "sold_on": "2026-03-12",
+      "warranty_till": "2028-03-11",
+      "customer": "Anil Kumar",
+      "history": "1 earlier call (fan replaced)"
+    },
+    {
+      "serial": "INV-5K-2409-00031",
+      "model": "5kVA Heavy",
+      "batch": "B-2409-01",
+      "sold_on": "2024-09-15",
+      "warranty_till": "2026-09-14",
+      "customer": "Joseph P",
+      "history": "No earlier calls"
+    },
+    {
+      "serial": "INV-2K-2502-00088",
+      "model": "2kVA Heavy",
+      "batch": "B-2502-03",
+      "sold_on": "2025-02-03",
+      "warranty_till": "2027-02-02",
+      "customer": "Meera Textiles",
+      "history": "No earlier calls"
+    }
+  ],
+  "employees": [
+    {
+      "name": "Rahul",
+      "initials": "RA",
+      "role": "Field technician",
+      "dept": "Service",
+      "joined": "Jun 2021",
+      "pay_type": "Monthly + per job",
+      "access": "Technician app",
+      "phone": "98470 00011",
+      "area": "Kakkanad"
+    },
+    {
+      "name": "Ajmal",
+      "initials": "AJ",
+      "role": "Field technician",
+      "dept": "Service",
+      "joined": "Apr 2022",
+      "pay_type": "Monthly + per job",
+      "access": "Technician app",
+      "phone": "98470 00012",
+      "area": "Edappally"
+    },
+    {
+      "name": "Vishnu",
+      "initials": "VI",
+      "role": "Field technician",
+      "dept": "Service",
+      "joined": "Sep 2023",
+      "pay_type": "Monthly + per job",
+      "access": "Technician app",
+      "phone": "98470 00013",
+      "area": "Vyttila"
+    },
+    {
+      "name": "Sanoop",
+      "initials": "SN",
+      "role": "Field technician",
+      "dept": "Service",
+      "joined": "Jan 2022",
+      "pay_type": "Monthly + per job",
+      "access": "Technician app",
+      "phone": "98470 00014",
+      "area": "Aluva"
+    },
+    {
+      "name": "Manoj K",
+      "initials": "MK",
+      "role": "Assembly",
+      "dept": "Production",
+      "joined": "Jan 2023",
+      "pay_type": "Daily wage + per unit",
+      "access": "None",
+      "phone": "",
+      "area": ""
+    },
+    {
+      "name": "Divya S",
+      "initials": "DS",
+      "role": "Accountant",
+      "dept": "Office",
+      "joined": "Mar 2022",
+      "pay_type": "Monthly",
+      "access": "Accounts, HR",
+      "phone": "",
+      "area": ""
+    },
+    {
+      "name": "Anjana",
+      "initials": "AN",
+      "role": "Store keeper",
+      "dept": "Store",
+      "joined": "Aug 2024",
+      "pay_type": "Monthly",
+      "access": "Inventory",
+      "phone": "",
+      "area": ""
+    },
+    {
+      "name": "Shibu",
+      "initials": "SH",
+      "role": "Testing & QC",
+      "dept": "Production",
+      "joined": "Feb 2020",
+      "pay_type": "Monthly",
+      "access": "Production",
+      "phone": "",
+      "area": ""
+    },
+    {
+      "name": "Prasad",
+      "initials": "PR",
+      "role": "Sales executive",
+      "dept": "Sales",
+      "joined": "Oct 2025",
+      "pay_type": "Monthly + commission",
+      "access": "Sales, Dealers",
+      "phone": "",
+      "area": ""
+    }
+  ],
+  "tickets": [
+    {
+      "code": "SR-1048",
+      "kind": "multi",
+      "customer": "City Bakery",
+      "product": "Su-Kam 1kVA · other brand",
+      "serial": null,
+      "tag": "Multi-brand",
+      "stage": "Awaiting inspection",
+      "tech": null,
+      "registered_on": "2026-11-18",
+      "phone": "98950 •• •77",
+      "fault": null,
+      "parts": null,
+      "action": null,
+      "address": "Edappally",
+      "inspection": null,
+      "proforma_no": null,
+      "proforma_sent": null,
+      "complaint": null
+    },
+    {
+      "code": "SR-1047",
+      "kind": "multi",
+      "customer": "M. Suresh",
+      "product": "Exide 900VA · other brand",
+      "serial": null,
+      "tag": "Multi-brand",
+      "stage": "Awaiting inspection",
+      "tech": "Ajmal",
+      "registered_on": "2026-11-18",
+      "phone": "97450 •• •21",
+      "fault": null,
+      "parts": null,
+      "action": null,
+      "address": "",
+      "inspection": null,
+      "proforma_no": null,
+      "proforma_sent": null,
+      "complaint": null
+    },
+    {
+      "code": "SR-1046",
+      "kind": "own",
+      "customer": "Meera Textiles",
+      "product": "Own 2kVA Heavy",
+      "serial": "INV-2K-2502-00088",
+      "tag": "Warranty",
+      "stage": "On site",
+      "tech": "Sanoop",
+      "registered_on": "2026-11-18",
+      "phone": "98470 •• •44",
+      "fault": null,
+      "parts": null,
+      "action": null,
+      "address": "Kaloor",
+      "inspection": null,
+      "proforma_no": null,
+      "proforma_sent": null,
+      "complaint": "Short backup time"
+    },
+    {
+      "code": "SR-1045",
+      "kind": "multi",
+      "customer": "Green Valley School",
+      "product": "Microtek 2kVA · other brand",
+      "serial": null,
+      "tag": "Multi-brand",
+      "stage": "Awaiting inspection",
+      "tech": "Rahul",
+      "registered_on": "2026-11-18",
+      "phone": "0484 •• •90",
+      "fault": null,
+      "parts": null,
+      "action": null,
+      "address": "Kakkanad",
+      "inspection": null,
+      "proforma_no": null,
+      "proforma_sent": null,
+      "complaint": null
+    },
+    {
+      "code": "SR-1044",
+      "kind": "own",
+      "customer": "Joseph P",
+      "product": "Own 5kVA Heavy",
+      "serial": "INV-5K-2409-00031",
+      "tag": "Chargeable",
+      "stage": "In repair",
+      "tech": "Vishnu",
+      "registered_on": "2026-11-17",
+      "phone": "90370 •• •58",
+      "fault": "Cooling fan seized, overheating trip",
+      "parts": "Fan 12V × 1",
+      "action": "Issue invoice on site",
+      "address": "Thevara, near St. Mary's church",
+      "inspection": null,
+      "proforma_no": null,
+      "proforma_sent": null,
+      "complaint": "Inverter trips after 10 min"
+    },
+    {
+      "code": "SR-1042",
+      "kind": "own",
+      "customer": "Anil Kumar",
+      "product": "Own 1100VA Home",
+      "serial": "INV-1K-2611-00482",
+      "tag": "Warranty",
+      "stage": "On site",
+      "tech": "Ajmal",
+      "registered_on": "2026-11-18",
+      "phone": "94461 •• •03",
+      "fault": "Battery not charging; loose DC terminal",
+      "parts": "DC lug × 2",
+      "action": "Close as free warranty",
+      "address": "",
+      "inspection": null,
+      "proforma_no": null,
+      "proforma_sent": null,
+      "complaint": "Battery not charging"
+    },
+    {
+      "code": "SR-1043",
+      "kind": "multi",
+      "customer": "Fathima Stores",
+      "product": "Luminous 1500VA · other brand",
+      "serial": null,
+      "tag": "Multi-brand",
+      "stage": "Proforma sent",
+      "tech": "Rahul",
+      "registered_on": "2026-11-16",
+      "phone": "98470 •• •12",
+      "fault": "No output on mains failure, charging section burnt, 2 MOSFETs shorted.",
+      "parts": null,
+      "action": null,
+      "address": "",
+      "inspection": "[[\"MOSFET IRFZ44N × 2\", 180], [\"Charging relay × 1\", 220], [\"Capacitor 4700µF × 1\", 150], [\"Labour (bench repair)\", 600], [\"Pickup & drop\", 200]]",
+      "proforma_no": "PI-2611-019",
+      "proforma_sent": "Sent on WhatsApp 17 Nov, 4:12 pm",
+      "complaint": null
+    }
+  ],
+  "leaves": [
+    {
+      "employee": "Ajmal",
+      "label": "Ajmal",
+      "type": "Casual leave",
+      "dates": "24–25 Nov",
+      "balance": "4 days",
+      "status": "pending"
+    },
+    {
+      "employee": "Shibu",
+      "label": "Shibu (testing)",
+      "type": "Sick leave",
+      "dates": "19 Nov",
+      "balance": "6 days",
+      "status": "pending"
+    },
+    {
+      "employee": "Anjana",
+      "label": "Anjana (store)",
+      "type": "Earned leave",
+      "dates": "1–5 Dec",
+      "balance": "9 days",
+      "status": "pending"
+    }
+  ],
+  "documents": [
+    {
+      "type": "Tax inv.",
+      "no": "TI-2611-214",
+      "party": "Dealer – Perumbavoor",
+      "doc_date": "2026-11-18",
+      "amount": 87320
+    },
+    {
+      "type": "Proforma",
+      "no": "PI-2611-019",
+      "party": "Fathima Stores",
+      "doc_date": "2026-11-17",
+      "amount": 1593
+    },
+    {
+      "type": "Tax inv.",
+      "no": "TI-2611-213",
+      "party": "Joseph P (service)",
+      "doc_date": "2026-11-17",
+      "amount": 1416
+    },
+    {
+      "type": "Purchase",
+      "no": "PB-2611-077",
+      "party": "Supplier C",
+      "doc_date": "2026-11-16",
+      "amount": 58410
+    },
+    {
+      "type": "Credit note",
+      "no": "CN-2611-003",
+      "party": "Dealer – Aluva",
+      "doc_date": "2026-11-15",
+      "amount": 7400
+    }
+  ],
+  "vans": [
+    {
+      "tech": "Rahul",
+      "items": 14,
+      "value": 8400,
+      "used_today": "MOSFET × 2",
+      "reconciled": "yesterday"
+    },
+    {
+      "tech": "Ajmal",
+      "items": 11,
+      "value": 6950,
+      "used_today": "DC lug × 2",
+      "reconciled": "yesterday"
+    },
+    {
+      "tech": "Vishnu",
+      "items": 18,
+      "value": 10150,
+      "used_today": "Fan × 1",
+      "reconciled": "2 days ago"
+    },
+    {
+      "tech": "Sanoop",
+      "items": 9,
+      "value": 6100,
+      "used_today": "none",
+      "reconciled": "today"
+    }
+  ],
+  "metrics": {
+    "dashboard": {
+      "date": "Wed, 18 Nov",
+      "warranty_closed_24h_pct": 68,
+      "units_built_month": 142,
+      "open_calls": 23,
+      "revenue_month": 1846200,
+      "awaiting_inspection": 6,
+      "proforma_pending": 5,
+      "proforma_value": 38450,
+      "proforma_channels": [
+        "3 via WhatsApp",
+        "2 via SMS"
+      ],
+      "collected_today": [
+        {
+          "label": "Cash",
+          "amount": 6200
+        },
+        {
+          "label": "UPI",
+          "amount": 11850
+        },
+        {
+          "label": "Bank",
+          "amount": 3400
+        }
+      ],
+      "under_warranty": 14,
+      "chargeable": 4,
+      "multi_brand": 5,
+      "avg_close_days": 1.6,
+      "profit_lines": [
+        {
+          "name": "Own inverters sold",
+          "value": 312400
+        },
+        {
+          "name": "Paid service (own brand)",
+          "value": 18900
+        },
+        {
+          "name": "Multi-brand repair",
+          "value": 41250
+        }
+      ]
+    },
+    "production": {
+      "units_on_line": 18,
+      "next_serial": 501
+    },
+    "service": {
+      "open_calls": 23,
+      "visits_today": 9,
+      "past_sla": 2
+    },
+    "inventory": {
+      "skus": 312,
+      "stock_value": 1462000
+    },
+    "field": {
+      "date": "Wed 18 Nov",
+      "techs_out": "4 / 5",
+      "jobs_today": 14,
+      "closed": 6,
+      "to_centre": 2,
+      "flow": [
+        {
+          "n": "1",
+          "label": "Verification",
+          "count": 1
+        },
+        {
+          "n": "2",
+          "label": "Diagnosis",
+          "count": 1
+        },
+        {
+          "n": "3",
+          "label": "Identify",
+          "count": 0
+        },
+        {
+          "n": "4",
+          "label": "Quote sent",
+          "count": 1
+        },
+        {
+          "n": "5",
+          "label": "Work",
+          "count": 1
+        },
+        {
+          "n": "6a",
+          "label": "Fixed on site",
+          "count": 6
+        },
+        {
+          "n": "6b",
+          "label": "To centre",
+          "count": 2
+        }
+      ],
+      "live": [
+        {
+          "init": "RA",
+          "name": "Rahul",
+          "job": "SR-1045",
+          "where": "Green Valley School, Kakkanad",
+          "time": "38 min",
+          "state": "onsite",
+          "step": 5,
+          "step_text": "Step 5 · Work in progress",
+          "map": {
+            "x": 190,
+            "y": 110,
+            "label": "Kakkanad · 38 min"
+          }
+        },
+        {
+          "init": "SN",
+          "name": "Sanoop",
+          "job": "SR-1046",
+          "where": "Meera Textiles, Kaloor",
+          "time": "27 min",
+          "state": "onsite",
+          "step": 4,
+          "step_text": "Step 4 · Quote sent, waiting for approval",
+          "map": {
+            "x": 600,
+            "y": 140,
+            "label": "Kaloor · 27 min"
+          }
+        },
+        {
+          "init": "AJ",
+          "name": "Ajmal",
+          "job": "SR-1048",
+          "where": "City Bakery, Edappally",
+          "time": "ETA 12 min",
+          "state": "travelling",
+          "step": 0,
+          "step_text": "Travelling to site",
+          "map": {
+            "x": 300,
+            "y": 215,
+            "label": "ETA 12 min"
+          }
+        },
+        {
+          "init": "VI",
+          "name": "Vishnu",
+          "job": "Free",
+          "where": "Near Vyttila",
+          "time": "—",
+          "state": "free",
+          "step": 0,
+          "step_text": "Available for the next call",
+          "map": {
+            "x": 690,
+            "y": 310,
+            "label": "Free · Vyttila"
+          }
+        }
+      ],
+      "kpis": {
+        "week": [
+          {
+            "label": "Fixed on first visit",
+            "value": "78%",
+            "note": "Goal 80%"
+          },
+          {
+            "label": "Avg time on site",
+            "value": "46 min",
+            "note": "Verification to close"
+          },
+          {
+            "label": "Avg response time",
+            "value": "1 h 50 m",
+            "note": "Call to check-in"
+          },
+          {
+            "label": "Quotes approved",
+            "value": "72%",
+            "note": "18 of 25"
+          },
+          {
+            "label": "Taken to centre",
+            "value": "9%",
+            "note": "6 of 64 jobs"
+          }
+        ],
+        "month": [
+          {
+            "label": "Fixed on first visit",
+            "value": "76%",
+            "note": "Goal 80%"
+          },
+          {
+            "label": "Avg time on site",
+            "value": "48 min",
+            "note": "Verification to close"
+          },
+          {
+            "label": "Avg response time",
+            "value": "2 h 05 m",
+            "note": "Call to check-in"
+          },
+          {
+            "label": "Quotes approved",
+            "value": "70%",
+            "note": "74 of 106"
+          },
+          {
+            "label": "Taken to centre",
+            "value": "10%",
+            "note": "27 of 268 jobs"
+          }
+        ]
+      },
+      "efficiency": [
+        {
+          "name": "Rahul",
+          "jobs": 19,
+          "avg": "41 min",
+          "ftf": "84%",
+          "quote": "80%",
+          "centre": 1,
+          "km": "142 km",
+          "rate": "4.8"
+        },
+        {
+          "name": "Sanoop",
+          "jobs": 16,
+          "avg": "44 min",
+          "ftf": "81%",
+          "quote": "75%",
+          "centre": 1,
+          "km": "168 km",
+          "rate": "4.6"
+        },
+        {
+          "name": "Ajmal",
+          "jobs": 15,
+          "avg": "52 min",
+          "ftf": "73%",
+          "quote": "67%",
+          "centre": 2,
+          "km": "131 km",
+          "rate": "4.5"
+        },
+        {
+          "name": "Vishnu",
+          "jobs": 14,
+          "avg": "49 min",
+          "ftf": "71%",
+          "quote": "64%",
+          "centre": 2,
+          "km": "120 km",
+          "rate": "4.4"
+        }
+      ]
+    },
+    "accounts": {
+      "fy": "FY 2026–27",
+      "month": "November 2026",
+      "cash_in_hand": 7420,
+      "bank_balance": 648200,
+      "to_receive": 284500,
+      "to_pay": 196300,
+      "gst_payable": 62140,
+      "bank_reconciled_pct": 86,
+      "gst": {
+        "output": 148920,
+        "input_credit": 86780,
+        "net": 62140,
+        "gstr1_due": "11 Dec",
+        "gstr3b_due": "20 Dec",
+        "eway_bills": 4
+      },
+      "bank": {
+        "unmatched": 12,
+        "suggested": 9,
+        "imported": "17 Nov"
+      },
+      "petty_cash": {
+        "balance": 7420,
+        "entries": [
+          {
+            "label": "Fuel – Rahul",
+            "amount": -500
+          },
+          {
+            "label": "Courier",
+            "amount": -180
+          },
+          {
+            "label": "Tea & snacks",
+            "amount": -240
+          }
+        ]
+      },
+      "profit_lines": [
+        {
+          "name": "850VA Home",
+          "rev": 262200,
+          "cost": 202400
+        },
+        {
+          "name": "1100VA Home",
+          "rev": 429200,
+          "cost": 310300
+        },
+        {
+          "name": "2kVA Heavy",
+          "rev": 338000,
+          "cost": 244700
+        },
+        {
+          "name": "5kVA Heavy",
+          "rev": 324000,
+          "cost": 283600
+        },
+        {
+          "name": "Paid service (own brand)",
+          "rev": 26400,
+          "cost": 7500
+        },
+        {
+          "name": "Warranty service",
+          "rev": 0,
+          "cost": 12800
+        },
+        {
+          "name": "Multi-brand repair",
+          "rev": 68700,
+          "cost": 27450
+        }
+      ]
+    },
+    "hr": {
+      "date": "Wed 18 Nov",
+      "employees": 28,
+      "present": 24,
+      "on_leave": 2,
+      "payroll_month": "November",
+      "payroll_total": 684000,
+      "shift": "9:00 am – 6:00 pm",
+      "depts": [
+        {
+          "name": "Production",
+          "present": 11,
+          "total": 12
+        },
+        {
+          "name": "Service",
+          "present": 5,
+          "total": 6
+        },
+        {
+          "name": "Office",
+          "present": 4,
+          "total": 5
+        },
+        {
+          "name": "Store",
+          "present": 3,
+          "total": 3
+        },
+        {
+          "name": "Sales",
+          "present": 1,
+          "total": 2
+        }
+      ],
+      "punches": [
+        {
+          "init": "RA",
+          "name": "Rahul",
+          "role": "Field technician",
+          "how": "App · GPS Kakkanad",
+          "time": "8:52 am",
+          "status": "Present"
+        },
+        {
+          "init": "MK",
+          "name": "Manoj K",
+          "role": "Assembly",
+          "how": "Face · factory gate",
+          "time": "9:14 am",
+          "status": "Late"
+        },
+        {
+          "init": "SN",
+          "name": "Sanoop",
+          "role": "Field technician",
+          "how": "App · GPS Aluva",
+          "time": "8:47 am",
+          "status": "Present"
+        },
+        {
+          "init": "DS",
+          "name": "Divya S",
+          "role": "Accountant",
+          "how": "Biometric · office",
+          "time": "8:58 am",
+          "status": "Present"
+        },
+        {
+          "init": "PR",
+          "name": "Prasad",
+          "role": "Sales executive",
+          "how": "—",
+          "time": "—",
+          "status": "Leave"
+        }
+      ],
+      "payroll": [
+        {
+          "label": "Basic + allowances",
+          "amount": 592000
+        },
+        {
+          "label": "Overtime (production)",
+          "amount": 38400
+        },
+        {
+          "label": "Incentives (units + jobs)",
+          "amount": 53600
+        },
+        {
+          "label": "PF / ESI (employer)",
+          "amount": 61200
+        },
+        {
+          "label": "Advances to recover",
+          "amount": -12000
+        }
+      ],
+      "incentives": [
+        {
+          "label": "Assembly · per unit passing QC",
+          "amount": 40
+        },
+        {
+          "label": "Technician · per job closed",
+          "amount": 60
+        },
+        {
+          "label": "Bonus · first-visit fix > 80%",
+          "amount": 1000
+        }
+      ],
+      "documents": [
+        {
+          "label": "Ajmal · driving licence",
+          "due": "in 12 days"
+        },
+        {
+          "label": "Van KL-07 · insurance",
+          "due": "in 20 days"
+        },
+        {
+          "label": "Sanoop · electrical licence",
+          "due": "in 41 days"
+        }
+      ]
+    }
+  }
+}
