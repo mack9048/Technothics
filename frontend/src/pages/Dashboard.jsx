@@ -32,7 +32,7 @@ export default function Dashboard() {
     setLookupError(null);
     try {
       const w = await api.get('/warranty/' + encodeURIComponent(serial.trim()));
-      setWarranty(w.serial ? w : sampleWarranty(serial));
+      setWarranty(w);
     } catch (err) {
       setWarranty(null);
       setLookupError(err.message);
@@ -216,12 +216,6 @@ function BigStat({ label, value }) {
       <span className="big">{value}</span>
     </div>
   );
-}
-
-// Demo mode has a single sample serial; anything else is "not found".
-function sampleWarranty(serial) {
-  if (serial.trim().toUpperCase() !== 'INV-1K-2611-00482') throw new Error('Serial number not found');
-  return { model: '1100VA Home', in_warranty: true, sold_on: '12 Mar 2026', warranty_till: '11 Mar 2028', customer: 'Anil Kumar' };
 }
 
 function exportCsv(data) {

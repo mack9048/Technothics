@@ -95,7 +95,8 @@ export default function Service() {
       </div>
 
       <div className="row">
-        <RegisterForm onCreated={(t, demo) => { mutate((d) => ({ ...d, tickets: [t, ...d.tickets] })); setFilter('All calls'); setSelId(t.code); showToast(`${t.code} created` + (demo ? ' (demo — not saved)' : '')); }} onError={showToast} techs={data.techs} />
+        <RegisterForm onCreated={(t, demo) => { mutate((d) => ({ ...d, tickets: [t, ...d.tickets] })); setFilter('All calls'); setSelId(t.code); showToast(`${t.code} created` + (demo ? ' (demo — not saved)' : '')); }} onError={showToast} techs={data.techs}
+          nextCode={'SR-' + (Math.max(1000, ...data.tickets.map((t) => Number(t.code.slice(3)))) + 1)} />
         <section aria-label="Technicians" className="card soft" style={{ flex: '1 1 420px' }}>
           <span className="card-title">Technicians today</span>
           {data.techs.map((k) => (
@@ -205,7 +206,7 @@ function Info({ label, value }) {
   );
 }
 
-function RegisterForm({ onCreated, onError, techs }) {
+function RegisterForm({ onCreated, onError, techs, nextCode }) {
   const [form, setForm] = useState({ phone: '', serial: '', complaint: '', auto_assign: true });
   const [busy, setBusy] = useState(false);
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.type === 'checkbox' ? e.target.checked : e.target.value }));
@@ -220,7 +221,7 @@ function RegisterForm({ onCreated, onError, techs }) {
         const own = /^INV-/i.test(form.serial.trim());
         const free = techs.find((k) => k.status === 'Free');
         t = {
-          code: 'SR-' + (1049 + Math.floor(Math.random() * 50)), kind: own ? 'own' : 'multi', customer: 'New customer',
+          code: nextCode, kind: own ? 'own' : 'multi', customer: 'New customer',
           product: own ? 'Own inverter' : form.serial + ' · other brand', serial: own ? form.serial.toUpperCase() : null,
           tag: own ? 'Warranty' : 'Multi-brand', stage: form.auto_assign ? 'Assigned' : 'Registered',
           tech: form.auto_assign ? free?.name : null, date: 'today', phone: form.phone, complaint: form.complaint,

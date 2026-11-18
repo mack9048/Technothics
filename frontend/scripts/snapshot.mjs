@@ -8,6 +8,7 @@ const paths = [
   '/tech/jobs', '/tech/jobs/SR-1044', '/tech/onsite/SR-1046',
   '/production?model=850VA Home', '/production?model=1100VA Home', '/production?model=2kVA Heavy', '/production?model=5kVA Heavy',
   '/field?period=week', '/field?period=month',
+  '/warranty/INV-1K-2611-00482', '/warranty/INV-5K-2409-00031', '/warranty/INV-2K-2502-00088',
 ];
 const out = {};
 for (const p of paths) {

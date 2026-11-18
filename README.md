@@ -95,3 +95,11 @@ All responses are JSON. When `API_KEY` is set, POST/PATCH need header `X-Api-Key
 - Summary figures that would normally come from the ledger (revenue, GST totals, attendance, field KPIs) are stored in the `metrics` table and seeded from `backend/database/seed.json`; lists (tickets, stock, BOM, batches, serials, employees, leaves, invoices, vans) are real tables. Replace metrics with live queries as modules are built out.
 - Not yet built: login/roles, WhatsApp/SMS sending, real map & GPS, UPI QR generation, voucher posting to a ledger, report pages (the report tiles are placeholders).
 - After changing seed data, refresh the demo snapshot: start the API, then `cd frontend && npm run snapshot`.
+
+## Testing
+`tests/e2e.cjs` clicks through every function (82 checks: navigation, filters, forms, saves, technician app, on-site flow, mobile layout).
+```bash
+php backend/database/migrate.php --fresh            # live mode needs a fresh DB
+node tests/e2e.cjs http://localhost:5173 live       # with `npm run dev` + PHP API running
+node tests/e2e.cjs http://localhost:4173 demo       # with `npm run build && npm run preview`
+```

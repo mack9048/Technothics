@@ -24,9 +24,11 @@ async function request(method, path, body) {
 }
 
 function fromSample(path) {
+  if (path.startsWith('/warranty/')) path = '/warranty/' + decodeURIComponent(path.slice(10)).trim().toUpperCase();
   if (path in sample) return structuredClone(sample[path]);
   const key = path.split('?')[0];
   if (key in sample) return structuredClone(sample[key]);
+  if (key.startsWith('/warranty/')) throw new Error('Serial number not found');
   throw new Error('No sample data for ' + key);
 }
 
